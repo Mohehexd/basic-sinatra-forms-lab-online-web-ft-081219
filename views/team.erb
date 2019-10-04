@@ -5,9 +5,17 @@
   <title>Basketball Team</title>
  </head>
  <body>
- 
-
-
+    <h1>Team Name: Brooklyn Nets</h1>
+    
+    <% @team.each do |member| %>
+    <h2><%= member %></h2>
+    <% end %>
+    <h2>Coach: Louis Armstrong</h2>
+    <h2>Point Guard: Ella Fitzgerald</h2>
+    <h2>Shooting Guard: Miles Davis</h2>
+    <h2>Small Forward: Dave Brubeck</h2>
+    <h2>Power Forward: John Coltrane</h2>
+    <h2>Center: Sonny Rollins</h2>
  </body>
 </html>
 
