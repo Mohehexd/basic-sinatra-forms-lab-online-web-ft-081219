@@ -2,13 +2,7 @@ require 'sinatra/base'
 
 class App < Sinatra::Base
 
-  get '/newteam' do |t|
-    t.string :name 
-    t.string :coach 
-    t.string :pg 
-    t.string :pf 
-    t.string :sf 
-    t.string :c 
+  get '/newteam' do
     
     erb :newteam
   end 
