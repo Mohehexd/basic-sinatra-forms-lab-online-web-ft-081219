@@ -11,6 +11,7 @@ class App < Sinatra::Base
     t.string :c 
     
     erb :newteam
+  end 
 
   post '/team' do
     @team = ['Coach: Louis Armstrong', 'Point Guard: Ella Fitzgerald', 'Shooting Guard: Miles Davis', 'Small Forward: Dave Brubeck', 'Power Forward: John Coltrane', 'Center: Sonny Rollins']
