@@ -4,12 +4,18 @@ class App < Sinatra::Base
 
   get '/newteam' do
     
-    erb :newteam
+  erb :newteam
   end 
 
   post '/team' do
-    @team = ['Coach: Louis Armstrong', 'Point Guard: Ella Fitzgerald', 'Shooting Guard: Miles Davis', 'Small Forward: Dave Brubeck', 'Power Forward: John Coltrane', 'Center: Sonny Rollins']
-    erb :team 
+    @name = params[:name]
+    @coach = params[:coach]
+    @PointGuard = params[:pg]
+    @ShootingGuard = params[:sg]
+    @PowerForward = params[:pf]
+    @SmallForward = params [:sf]
+    @Center = [:c]
+  erb :team 
   end
 
 end
